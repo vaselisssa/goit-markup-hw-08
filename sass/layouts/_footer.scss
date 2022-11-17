@@ -1,0 +1,92 @@
+.footer {
+   background-color: getColor("background-dark");
+   padding-top: 60px;
+   padding-bottom: 60px;
+
+   &__container {
+      display: flex;
+      gap: 70px;
+   }
+}
+
+.contacts-list .link {
+   display: block;
+
+   font-style: normal;
+   line-height: 1.71;
+
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+   &:focus {
+      color: getColor("accent");
+   }
+}
+
+.contact-list {
+   &__item {
+      margin-top: 9px;
+      margin-bottom: 9px;
+   }
+   &__address {
+      color: getColor("secondary-light");
+   }
+
+   &__mail,
+   &__tel {
+      color: rgba(255, 255, 255, 0.6);
+   }
+}
+
+.footer__container {
+   display: flex;
+   gap: 70px;
+   align-items: baseline;
+}
+
+.social {
+   width: 206px;
+}
+
+.motivation {
+   margin-bottom: 20px;
+
+   @include font(Null, 1.14, 700, Null);
+   text-transform: uppercase;
+
+   color: getColor("secondary-light");
+}
+
+.subscription {
+   margin-left: auto;
+
+   &__form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+   }
+
+   .form__input {
+      width: 358px;
+      height: 50px;
+
+      padding-left: 16px;
+
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: $shadow;
+      border-radius: 4px;
+      outline: none;
+      background-color: transparent;
+      @include font(16px, 1.25, 400, 0.03em);
+      color: rgba(255, 255, 255, 0.6);
+   }
+
+   .form__button {
+      width: 200px;
+      height: 50px;
+
+      @extend %centered;
+      gap: 10px;
+   }
+}

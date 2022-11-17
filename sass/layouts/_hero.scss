@@ -1,0 +1,34 @@
+.hero {
+   padding-top: 200px;
+   padding-bottom: 200px;
+   max-width: 1600px;
+   height: 600px;
+   margin-left: auto;
+   margin-right: auto;
+
+   background-color: getColor("background-dark");
+   background-image: linear-gradient(
+         rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/studio/hero/overlay.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   text-align: center;
+
+   &__title {
+      margin-bottom: 30px;
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 696px;
+
+      color: getColor("secondary-light");
+      @include font(44px, 1.36, 900, 0.06em);
+      text-transform: uppercase;
+   }
+
+   &__button {
+      padding: 10px 32px;
+   }
+}

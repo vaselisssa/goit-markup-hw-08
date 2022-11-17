@@ -1,0 +1,86 @@
+.header {
+   border-bottom: 1px solid #ececec;
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+   }
+}
+
+.navigation {
+   display: flex;
+   gap: 93px;
+   align-items: center;
+}
+
+.menu {
+   display: flex;
+   gap: 50px;
+}
+
+.menu__item {
+   position: relative;
+}
+
+.menu__link {
+   @include font(Null, 1.14, 500, 0.02em);
+
+   display: block;
+   padding-top: 32px;
+   padding-bottom: 32px;
+
+   color: getColor("title");
+
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &.current::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      width: 100%;
+      height: 4px;
+
+      background-color: getColor("accent");
+      border-radius: 2px;
+   }
+
+   &:hover,
+   &:focus,
+   &:active,
+   &.current {
+      color: getColor("accent");
+   }
+}
+
+.connect {
+   display: flex;
+   gap: 50px;
+
+   &__item {
+      display: flex;
+      align-items: center;
+   }
+}
+
+.connect__link {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+
+   @include font(Null, 1.14, 500, 0.02em);
+
+   color: getColor("primary-text");
+
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+   &:focus {
+      color: getColor("accent");
+   }
+}
+
+.connect__icon {
+   fill: currentColor;
+}
