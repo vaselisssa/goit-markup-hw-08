@@ -1,14 +1,29 @@
-.feature {
-   padding-bottom: 73px;
-}
+/* .feature {
+   @media screen and (min-width: $desktop) {
+      padding-bottom: 94px;
+   }
+} */
 
 .feature__list {
    display: flex;
    gap: 30px;
+   flex-wrap: wrap;
+
+   @media screen and (max-width: 767px) {
+      flex-direction: column;
+   }
 }
 
 .feature__item {
-   width: calc((100% - 90px) / 4);
+   width: 100%;
+
+   @media screen and (min-width: $tablet) {
+      width: calc((100% - 30px) / 2);
+   }
+
+   @media screen and (min-width: $desktop) {
+      width: calc((100% - 90px) / 4);
+   }
 }
 
 .box {
@@ -32,6 +47,10 @@
 
    @include font(14px, 1.14, Null, Null);
    text-transform: uppercase;
+
+   @media screen and (max-width: 767px) {
+      text-align: center;
+   }
 }
 
 .feature__text {

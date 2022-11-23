@@ -43,6 +43,11 @@
                      <a href="#" class="menu__link link">Контакти</a>
                   </li>
                </ul>
+               <button type="button" class="menu__button">
+                  <svg width="40px" height="40px" class="menu__button--open">
+                     <use href="./images/icons.svg#icon-menu"></use>
+                  </svg>
+               </button>
             </nav>
             <ul class="connect list">
                <li class="connect__item">
@@ -50,7 +55,7 @@
                      href="mailto:info@devstudio.com"
                      class="connect__link link"
                   >
-                     <svg width="16px" height="12px" class="connect__icon">
+                     <svg class="connect__icon connect__icon--email">
                         <use href="./images/icons.svg#icon-envelope"></use>
                      </svg>
                      info@devstudio.com</a
@@ -58,7 +63,7 @@
                </li>
                <li class="connect__item">
                   <a href="tel:+380961111111" class="connect__link link"
-                     ><svg width="10px" height="16px" class="connect__icon">
+                     ><svg class="connect__icon connect__icon--tel">
                         <use
                            href="./images/icons.svg#icon-smartphone"
                         ></use></svg
@@ -186,7 +191,7 @@
          <!-- team -->
          <section class="section team">
             <div class="container">
-               <h2 class="section-title title">Наша команда</h2>
+               <h2 class="section__title title">Наша команда</h2>
                <ul class="team-list list">
                   <li class="team-card">
                      <img
@@ -583,7 +588,7 @@
                   </ul>
                </div>
             </div>
-            <div class="footer__subscription subscription">
+            <div class="footer__subscription-wrap">
                <p class="subscription__text motivation">
                   Підпишіться на розсилку
                </p>

@@ -3,7 +3,12 @@
 }
 
 .section__title {
-   margin-bottom: 50px;
-   @include font(36px, 1.17, 700, 0.06em);
+   margin-bottom: 30px;
+   @include font(28px, 1.18, 700, 0.06em);
    text-align: center;
+
+   @media screen and (min-width: $desktop) {
+      margin-bottom: 50px;
+      @include font(36px, 1.17, 700, 0.06em);
+   }
 }

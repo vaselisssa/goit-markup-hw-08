@@ -1,8 +1,7 @@
 .hero {
-   padding-top: 200px;
-   padding-bottom: 200px;
-   max-width: 1600px;
-   height: 600px;
+   padding-top: 118px;
+   padding-bottom: 118px;
+   height: 400px;
    margin-left: auto;
    margin-right: auto;
 
@@ -17,18 +16,34 @@
    background-size: cover;
    text-align: center;
 
+   @media screen and (min-width: $desktop) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      max-width: 1600px;
+      height: 600px;
+   }
+
    &__title {
       margin-bottom: 30px;
       margin-right: auto;
       margin-left: auto;
-      max-width: 696px;
+      max-width: 360px;
 
       color: getColor("secondary-light");
-      @include font(44px, 1.36, 900, 0.06em);
+      @include font(26px, 1.62, 900, 0.06em);
       text-transform: uppercase;
+
+      @media screen and (min-width: $desktop) {
+         max-width: 696px;
+         @include font(44px, 1.36, 900, 0.06em);
+      }
    }
 
    &__button {
-      padding: 10px 32px;
+      padding: 10px 24px;
+
+      @media screen and (min-width: $desktop) {
+         padding: 10px 32px;
+      }
    }
 }

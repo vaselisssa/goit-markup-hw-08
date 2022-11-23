@@ -1,11 +1,20 @@
 .clients-list {
    display: flex;
    gap: 30px;
+   flex-wrap: wrap;
 }
 
 .clients-item {
-   width: calc((100% - 150px) / 6);
+   width: calc((100% - 30px) / 2);
    height: 92px;
+
+   @media screen and (min-width: $tablet) {
+      width: calc((100% - 60px) / 3);
+   }
+
+   @media screen and (min-width: $desktop) {
+      width: calc((100% - 150px) / 6);
+   }
 }
 
 .clients-link {

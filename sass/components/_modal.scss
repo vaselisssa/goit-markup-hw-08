@@ -1,7 +1,9 @@
 .modal {
    @extend %absolute-centered;
-   width: 528px;
-   height: 581px;
+   /* width: 528px;
+   height: 581px; */
+   width: 450px;
+   height: 609px;
    padding: 40px;
 
    background-color: getColor("secondary-light");
@@ -41,7 +43,8 @@
 }
 
 .modal-title {
-   @include font(20px, 1.15, 700, null);
+   /* @include font(20px, 1.15, 700, null); */
+   @include font(20px, 1.5, 700, null);
    text-align: center;
    color: getColor("title");
 

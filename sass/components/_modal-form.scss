@@ -77,11 +77,15 @@
 .modal-agreement {
    margin-bottom: 30px;
 
-   @extend %centered;
+   display: flex;
+   align-items: center;
+
+   /* @extend %centered; */
 }
 
 .check-text {
-   line-height: 1.71;
+   @include font(12px, 1.17, Null, Null);
+   /* line-height: 1.71; */
    color: getColor("primary-text");
 
    padding-left: 23px;
