@@ -395,7 +395,11 @@ body {
   margin-bottom: 30px;
   display: flex;
   align-items: center;
-  /* @extend %centered; */
+}
+@media screen and (min-width: 1200px) {
+  .modal-agreement {
+    justify-content: center;
+  }
 }
 
 .check-text {
@@ -403,10 +407,15 @@ body {
   line-height: 1.17;
   font-weight: Null;
   letter-spacing: Null;
-  /* line-height: 1.71; */
   color: #757575;
   padding-left: 23px;
   position: relative;
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .check-text span {
   width: 16px;

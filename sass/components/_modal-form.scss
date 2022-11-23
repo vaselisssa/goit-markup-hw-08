@@ -80,12 +80,19 @@
    display: flex;
    align-items: center;
 
-   /* @extend %centered; */
+   @media screen and (min-width: $desktop) {
+      justify-content: center;
+   }
 }
 
 .check-text {
    @include font(12px, 1.17, Null, Null);
-   /* line-height: 1.71; */
+
+   @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 1.71;
+   }
+
    color: getColor("primary-text");
 
    padding-left: 23px;
