@@ -1,9 +1,9 @@
 .logo {
    font-family: "Raleway";
-   @include font(24px, 1.17, 700, 0.03em);
+   @include font(24px, 1.17, 700, Null);
 
-   @media screen and (min-width: $desktop) {
-      @include font(26px, 1.19, 700, 0.03em);
+   @include media(1200px) {
+      @include font(26px, 1.19, Null, Null);
    }
 
    span {

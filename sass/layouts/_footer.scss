@@ -4,11 +4,11 @@
    padding-bottom: 60px;
    height: 603px;
 
-   @media screen and (min-width: $tablet) {
+   @include media(768px) {
       height: 463px;
    }
 
-   @media screen and (min-width: $desktop) {
+   @include media(1200px) {
       height: 252px;
    }
 
@@ -18,7 +18,7 @@
       gap: 60px;
       align-items: center;
 
-      @media screen and (min-width: $tablet) {
+      @include media(768px) {
          flex-direction: row;
          flex-wrap: wrap;
          column-gap: 165px;
@@ -27,21 +27,25 @@
          justify-content: center;
       }
 
-      @media screen and (min-width: $desktop) {
+      @include media(1200px) {
          gap: 70px;
          flex-wrap: nowrap;
       }
    }
 
    &__contacts-wrap {
-      @media screen and (max-width: 1199px) {
-         text-align: center;
+      text-align: center;
+
+      @include media(1200px) {
+         text-align: left;
       }
    }
 
    &__social-wrap {
-      @media screen and (max-width: 1199px) {
-         text-align: center;
+      text-align: center;
+
+      @include media(1200px) {
+         text-align: left;
       }
    }
 }
@@ -64,7 +68,7 @@
    &__item:not(:last-child) {
       margin-bottom: 8px;
 
-      @media screen and (min-width: $desktop) {
+      @include media(1200px) {
          margin-bottom: 9px;
       }
    }
@@ -101,7 +105,7 @@
       margin-right: 155px;
    }
 
-   @media screen and (min-width: $desktop) {
+   @include media(1200px) {
       text-align: left;
       margin-left: auto;
       width: auto;
@@ -109,7 +113,7 @@
 }
 
 .subscription__form {
-   @media screen and (min-width: $desktop) {
+   @include media(1200px) {
       display: flex;
       justify-content: center;
       gap: 12px;
@@ -133,7 +137,7 @@
    display: block;
    margin-bottom: 20px;
 
-   @media screen and (min-width: $desktop) {
+   @include media(1200px) {
       width: 358px;
    }
 }

@@ -5,15 +5,15 @@
 }
 
 .clients-item {
-   width: calc((100% - 30px) / 2);
+   @include calc(30px, 2);
    height: 92px;
 
-   @media screen and (min-width: $tablet) {
-      width: calc((100% - 60px) / 3);
+   @include media(768px) {
+      @include calc(30px, 3);
    }
 
-   @media screen and (min-width: $desktop) {
-      width: calc((100% - 150px) / 6);
+   @include media(1200px) {
+      @include calc(30px, 6);
    }
 }
 

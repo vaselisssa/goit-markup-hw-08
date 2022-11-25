@@ -16,7 +16,7 @@
    background-size: cover;
    text-align: center;
 
-   @media screen and (min-width: $desktop) {
+   @include media(1200px) {
       padding-top: 200px;
       padding-bottom: 200px;
       max-width: 1600px;
@@ -33,16 +33,16 @@
       @include font(26px, 1.62, 900, 0.06em);
       text-transform: uppercase;
 
-      @media screen and (min-width: $desktop) {
+      @include media(1200px) {
          max-width: 696px;
-         @include font(44px, 1.36, 900, 0.06em);
+         @include font(44px, 1.36, Null, Null);
       }
    }
 
    &__button {
       padding: 10px 24px;
 
-      @media screen and (min-width: $desktop) {
+      @include media(1200px) {
          padding: 10px 32px;
       }
    }

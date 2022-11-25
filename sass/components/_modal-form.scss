@@ -80,7 +80,7 @@
    display: flex;
    align-items: center;
 
-   @media screen and (min-width: $desktop) {
+   @include media(1200px) {
       justify-content: center;
    }
 }
@@ -88,7 +88,7 @@
 .check-text {
    @include font(12px, 1.17, Null, Null);
 
-   @media screen and (min-width: $desktop) {
+   @include media(1200px) {
       font-size: 14px;
       line-height: 1.71;
    }

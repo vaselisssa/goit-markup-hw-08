@@ -4,3 +4,13 @@
    font-weight: $weight;
    letter-spacing: $spacing;
 }
+
+@mixin media($size) {
+   @media screen and (min-width: $size) {
+      @content;
+   }
+}
+
+@mixin calc($gap, $count) {
+   width: calc((100% - $gap * ($count - 1)) / $count);
+}

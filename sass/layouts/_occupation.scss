@@ -1,10 +1,11 @@
 .occupation {
-   @media screen and (max-width: 1199px) {
-      display: none;
-   }
+   display: none;
 
-   padding-top: 0;
-   padding-bottom: 115px;
+   @include media(1200px) {
+      display: block;
+      padding-top: 0;
+      padding-bottom: 115px;
+   }
 
    &__list {
       display: flex;
@@ -13,7 +14,7 @@
 }
 
 .occupation__item {
-   width: calc((100% - 60px) / 3);
+   @include calc(30px, 3);
 }
 
 .item {

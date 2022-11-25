@@ -5,22 +5,19 @@
       display: flex;
       gap: 30px;
       flex-wrap: wrap;
-
-      @media screen and (max-width: 767px) {
-         flex-direction: column;
-      }
    }
 }
 
 .team-card {
+   max-width: 100%;
    width: 100%;
 
-   @media screen and (min-width: $tablet) {
-      width: calc((100% - 30px) / 2);
+   @include media(768px) {
+      @include calc(30px, 2);
    }
 
-   @media screen and (min-width: $desktop) {
-      width: calc((100% - 90px) / 4);
+   @include media(1200px) {
+      @include calc(30px, 4);
    }
 
    background-color: getColor("background-light");
@@ -28,30 +25,13 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 0px 0px 4px 4px;
 
-   & img {
-      /* width: 100%; */
-      /* @media screen and (max-width: 767px) {
-         width: 100%;
-      } */
-
-      width: 450px;
-      height: 460px;
-
-      @media screen and (min-width: $tablet) {
-         width: 354px;
-         height: 374px;
-      }
-
-      @media screen and (min-width: $desktop) {
-         width: 270px;
-         height: 260px;
-      }
-   }
-
    &-text {
       padding-top: 30px;
       padding-bottom: 24px;
-      /* padding-bottom: 30px; */
+
+      @include media(1200px) {
+         padding-bottom: 30px;
+      }
    }
 
    &-title {
