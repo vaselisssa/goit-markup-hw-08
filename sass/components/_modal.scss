@@ -1,11 +1,17 @@
 .modal {
-   @extend %absolute-centered;
    width: 100%;
+   height: auto;
+   padding: 15px;
 
    @include media(480px) {
       width: 450px;
       height: 609px;
       padding: 40px;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
    }
 
    @include media(1200px) {
