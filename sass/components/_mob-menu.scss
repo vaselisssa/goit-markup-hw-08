@@ -61,13 +61,14 @@
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
    &:hover,
-   &:focus {
+   &:focus,
+   &:active {
       color: getColor("accent");
    }
 
    &--tel {
-      @media screen and (max-width: 381px) {
-         font-size: 33px;
+      @media screen and (max-width: 431px) {
+         font-size: 27px;
       }
       color: getColor("accent");
    }
@@ -104,10 +105,10 @@
 }
 
 .mob-soc__link {
-   @include font(14px, 1.22, 500, 0.02em);
+   @include font(12px, 1.22, 500, 0.02em);
    color: getColor("accent");
 
-   @include media(380px) {
+   @include media(430px) {
       font-size: 18px;
    }
 }
