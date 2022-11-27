@@ -7,18 +7,32 @@
       @include media(768px) {
          height: 80px;
 
+         display: -webkit-box;
+
+         display: -ms-flexbox;
+
          display: flex;
+         -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
          justify-content: space-between;
       }
    }
 }
 .navigation {
    height: 100%;
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
    justify-content: space-between;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
    align-items: center;
 
    @include media(768px) {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       gap: 87px;
    }
@@ -32,6 +46,8 @@
    display: none;
 
    @include media(768px) {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       gap: 48px;
    }
@@ -54,6 +70,8 @@
 
    color: getColor("title");
 
+   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
    &.current::after {
@@ -81,25 +99,43 @@
    display: none;
 
    @include media(768px) {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       gap: 10px;
    }
 
    @include media(1200px) {
       gap: 30px;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
       flex-direction: row;
    }
 
    &__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
    }
 }
 
 .connect__link {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
    align-items: center;
    gap: 10px;
 
@@ -107,6 +143,8 @@
 
    color: getColor("primary-text");
 
+   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
    @include media(768px) {
