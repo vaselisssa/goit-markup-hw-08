@@ -146,7 +146,7 @@
    }
 }
 
-.menu__button {
+.menu__button-open {
    padding: 0;
 
    background-color: transparent;
@@ -155,9 +155,5 @@
 
    @include media(768px) {
       display: none;
-   }
-
-   &--open {
-      fill: inherit;
    }
 }

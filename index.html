@@ -43,8 +43,8 @@
                      <a href="#" class="menu__link link">Контакти</a>
                   </li>
                </ul>
-               <button type="button" class="menu__button">
-                  <svg width="40px" height="40px" class="menu__button--open">
+               <button type="button" class="menu__button-open" data-menu-open>
+                  <svg class="menu__icon" width="40px" height="40px">
                      <use href="./images/icons.svg#icon-menu"></use>
                   </svg>
                </button>
@@ -71,6 +71,91 @@
                   >
                </li>
             </ul>
+         </div>
+
+         <!-- mob-menu -->
+         <div class="mob-menu is-hidden" data-menu>
+            <div class="container">
+               <button
+                  type="button"
+                  class="mob-menu__button-close"
+                  data-menu-close
+               >
+                  <svg class="mob-menu__icon" width="40px" height="40px">
+                     <use href="./images/icons.svg#icon-close-mob"></use>
+                  </svg>
+               </button>
+               <div class="mob-menu-top">
+                  <ul class="mob-menu__list list">
+                     <li class="mob-menu__item">
+                        <a href="./index.html" class="mob-menu__link link"
+                           >Студія</a
+                        >
+                     </li>
+                     <li class="mob-menu__item">
+                        <a href="./portfolio.html" class="mob-menu__link link"
+                           >Портфоліо</a
+                        >
+                     </li>
+                     <li class="mob-menu__item">
+                        <a href="#" class="mob-menu__link link">Контакти</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="mob-menu-bottom">
+                  <ul class="mob-menu__list list">
+                     <li class="mob-menu__item">
+                        <a
+                           href="tel:+380961111111"
+                           class="mob-menu__link mob-menu__link--tel link"
+                           >+38 096 111 11 11</a
+                        >
+                     </li>
+                     <li class="mob-menu__item">
+                        <a
+                           href="mailto:info@devstudio.com"
+                           class="mob-menu__link mob-menu__link--email link"
+                           >info@devstudio.com</a
+                        >
+                     </li>
+                  </ul>
+
+                  <ul class="mob-soc__list list">
+                     <li class="mob-soc__item">
+                        <a
+                           href="#"
+                           rel="noopener nofollow noreferrer"
+                           class="mob-soc__link link"
+                           >Instagram</a
+                        >
+                     </li>
+                     <li class="mob-soc__item">
+                        <a
+                           href="#"
+                           rel="noopener nofollow noreferrer"
+                           class="mob-soc__link link"
+                           >Twitter</a
+                        >
+                     </li>
+                     <li class="mob-soc__item">
+                        <a
+                           href="#"
+                           rel="noopener nofollow noreferrer"
+                           class="mob-soc__link link"
+                           >Facebook</a
+                        >
+                     </li>
+                     <li class="mob-soc__item">
+                        <a
+                           href="#"
+                           rel="noopener nofollow noreferrer"
+                           class="mob-soc__link link"
+                           >LinkedIn</a
+                        >
+                     </li>
+                  </ul>
+               </div>
+            </div>
          </div>
       </header>
 
@@ -148,6 +233,10 @@
                   <li class="occupation__item item">
                      <div class="item__thumb">
                         <img
+                           srcset="
+                              ./images/studio/occupation/ocupation-1.jpg    1x,
+                              ./images/studio/occupation/ocupation-1-2x.jpg 2x
+                           "
                            src="./images/studio/occupation/ocupation-1.jpg"
                            alt="Людина набирає текст з клавіатури"
                            width="370"
@@ -161,6 +250,10 @@
                   <li class="occupation__item item">
                      <div class="item__thumb">
                         <img
+                           srcset="
+                              ./images/studio/occupation/ocupation-2.jpg    1x,
+                              ./images/studio/occupation/ocupation-2-2x.jpg 2x
+                           "
                            src="./images/studio/occupation/ocupation-2.jpg"
                            alt="Людина працює з телефоном і ноутбуком"
                            width="370"
@@ -174,6 +267,10 @@
                   <li class="occupation__item item">
                      <div class="item__thumb">
                         <img
+                           srcset="
+                              ./images/studio/occupation/ocupation-3.jpg    1x,
+                              ./images/studio/occupation/ocupation-3-2x.jpg 2x
+                           "
                            src="./images/studio/occupation/ocupation-3.jpg"
                            alt="Палітра кольорів, відкрита на планшеті"
                            width="370"
@@ -194,11 +291,35 @@
                <h2 class="section__title title">Наша команда</h2>
                <ul class="team-list list">
                   <li class="team-card">
-                     <img
-                        src="./images/studio/team/teammate-1.jpg"
-                        alt="Усміхнений хлопець в окулярах"
-                        width="270"
-                     />
+                     <picture>
+                        <source
+                           srcset="
+                              ./images/studio/team/teammate-1.jpg    1x,
+                              ./images/studio/team/teammate-1-2x.jpg 2x
+                           "
+                           media="(min-width: 1200px)"
+                        />
+                        <source
+                           srcset="
+                              ./images/studio/team/teammate-1-tab.jpg    1x,
+                              ./images/studio/team/teammate-1-tab-2x.jpg 2x
+                           "
+                           media="(min-width: 768px)"
+                        />
+                        <source
+                           srcset="
+                              ./images/studio/team/teammate-1-mob.jpg    1x,
+                              ./images/studio/team/teammate-1-mob-2x.jpg 2x
+                           "
+                           media="(min-width: 320px)"
+                        />
+                        <img
+                           src="./images/studio/team/teammate-1.jpg"
+                           alt="Усміхнений хлопець в окулярах"
+                           width="450"
+                        />
+                     </picture>
+
                      <div class="team-card-text">
                         <h3 class="team-card-title title">Ігор Дем'яненко</h3>
                         <p lang="en">Product Designer</p>
@@ -251,11 +372,34 @@
                      </div>
                   </li>
                   <li class="team-card">
-                     <img
-                        src="./images/studio/team/teammate-2.jpg"
-                        alt="Усміхнена блондинка в окулярах"
-                        width="270"
-                     />
+                     <picture>
+                        <source
+                           srcset="
+                              ./images/studio/team/teammate-2.jpg    1x,
+                              ./images/studio/team/teammate-2-2x.jpg 2x
+                           "
+                           media="(min-width: 1200px)"
+                        />
+                        <source
+                           srcset="
+                              ./images/studio/team/teammate-2-tab.jpg    1x,
+                              ./images/studio/team/teammate-2-tab-2x.jpg 2x
+                           "
+                           media="(min-width: 768px)"
+                        />
+                        <source
+                           srcset="
+                              ./images/studio/team/teammate-2-mob.jpg    1x,
+                              ./images/studio/team/teammate-2-mob-2x.jpg 2x
+                           "
+                           media="(min-width: 320px)"
+                        />
+                        <img
+                           src="./images/studio/team/teammate-2.jpg"
+                           alt="Усміхнена блондинка в окулярах"
+                           width="450"
+                        />
+                     </picture>
                      <div class="team-card-text">
                         <h3 class="team-card-title title">Ольга Рєпіна</h3>
                         <p lang="en">Frontend Developer</p>
@@ -308,11 +452,34 @@
                      </div>
                   </li>
                   <li class="team-card">
-                     <img
-                        src="./images/studio/team/teammate-3.jpg"
-                        alt="Усміхнений хлопець дивиться в бік"
-                        width="270"
-                     />
+                     <picture>
+                        <source
+                           srcset="
+                              ./images/studio/team/teammate-3.jpg    1x,
+                              ./images/studio/team/teammate-3-2x.jpg 2x
+                           "
+                           media="(min-width: 1200px)"
+                        />
+                        <source
+                           srcset="
+                              ./images/studio/team/teammate-3-tab.jpg    1x,
+                              ./images/studio/team/teammate-3-tab-2x.jpg 2x
+                           "
+                           media="(min-width: 768px)"
+                        />
+                        <source
+                           srcset="
+                              ./images/studio/team/teammate-3-mob.jpg    1x,
+                              ./images/studio/team/teammate-3-mob-2x.jpg 2x
+                           "
+                           media="(min-width: 320px)"
+                        />
+                        <img
+                           src="./images/studio/team/teammate-3.jpg"
+                           alt="Усміхнений хлопець дивиться в бік"
+                           width="450"
+                        />
+                     </picture>
                      <div class="team-card-text">
                         <h3 class="team-card-title title">Микола Тарасов</h3>
                         <p lang="en">Marketing</p>
@@ -365,11 +532,34 @@
                      </div>
                   </li>
                   <li class="team-card">
-                     <img
-                        src="./images/studio/team/teammate-4.jpg"
-                        alt="Хлопець в окулярах з хитрою усмішкою"
-                        width="270"
-                     />
+                     <picture>
+                        <source
+                           srcset="
+                              ./images/studio/team/teammate-4.jpg    1x,
+                              ./images/studio/team/teammate-4-2x.jpg 2x
+                           "
+                           media="(min-width: 1200px)"
+                        />
+                        <source
+                           srcset="
+                              ./images/studio/team/teammate-4-tab.jpg    1x,
+                              ./images/studio/team/teammate-4-tab-2x.jpg 2x
+                           "
+                           media="(min-width: 768px)"
+                        />
+                        <source
+                           srcset="
+                              ./images/studio/team/teammate-4-mob.jpg    1x,
+                              ./images/studio/team/teammate-4-mob-2x.jpg 2x
+                           "
+                           media="(min-width: 320px)"
+                        />
+                        <img
+                           src="./images/studio/team/teammate-4.jpg"
+                           alt="Хлопець в окулярах з хитрою усмішкою"
+                           width="450"
+                        />
+                     </picture>
                      <div class="team-card-text">
                         <h3 class="team-card-title title">Михайло Єрмаков</h3>
                         <p lang="en">UI Designer</p>
@@ -704,5 +894,6 @@
          </div>
       </div>
       <script src="./js/modal.js"></script>
+      <script src="./js/menu.js"></script>
    </body>
 </html>

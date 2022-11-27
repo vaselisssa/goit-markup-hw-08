@@ -4,23 +4,66 @@
    height: 400px;
    margin-left: auto;
    margin-right: auto;
+   max-width: 480px;
 
    background-color: getColor("background-dark");
    background-image: linear-gradient(
          rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)
       ),
-      url(../images/studio/hero/overlay.jpg);
+      url(../images/studio/hero/overlay-mob.jpg);
+
+   @include retina {
+      background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+         ),
+         url(../images/studio/hero/overlay-mob-2x.jpg);
+   }
+
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
    text-align: center;
+
+   @include media(768px) {
+      max-width: 768px;
+
+      background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+         ),
+         url(../images/studio/hero/overlay-tab.jpg);
+
+      @include retina {
+         background-image: linear-gradient(
+               rgba(47, 48, 58, 0.4),
+               rgba(47, 48, 58, 0.4)
+            ),
+            url(../images/studio/hero/overlay-tab-2x.jpg);
+      }
+   }
 
    @include media(1200px) {
       padding-top: 200px;
       padding-bottom: 200px;
       max-width: 1600px;
       height: 600px;
+      max-width: 1600px;
+
+      background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+         ),
+         url(../images/studio/hero/overlay.jpg);
+
+      @include retina {
+         background-image: linear-gradient(
+               rgba(47, 48, 58, 0.4),
+               rgba(47, 48, 58, 0.4)
+            ),
+            url(../images/studio/hero/overlay-2x.jpg);
+      }
    }
 
    &__title {
