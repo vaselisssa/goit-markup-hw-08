@@ -1,9 +1,6 @@
 .clients-list {
-   display: -webkit-box;
-   display: -ms-flexbox;
    display: flex;
    gap: 30px;
-   -ms-flex-wrap: wrap;
    flex-wrap: wrap;
 }
 
@@ -29,12 +26,6 @@
    color: getColor("icons");
    border: 1px solid getColor("icons");
    border-radius: 4px;
-
-   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-   -o-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1);

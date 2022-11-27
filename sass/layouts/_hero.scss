@@ -7,19 +7,6 @@
    max-width: 480px;
 
    background-color: getColor("background-dark");
-   background-image: -webkit-gradient(
-         linear,
-         left top,
-         left bottom,
-         from(rgba(47, 48, 58, 0.4)),
-         to(rgba(47, 48, 58, 0.4))
-      ),
-      url(../images/studio/hero/overlay-mob.jpg);
-   background-image: -o-linear-gradient(
-         rgba(47, 48, 58, 0.4),
-         rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/studio/hero/overlay-mob.jpg);
    background-image: linear-gradient(
          rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)
@@ -27,19 +14,6 @@
       url(../images/studio/hero/overlay-mob.jpg);
 
    @include retina {
-      background-image: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            from(rgba(47, 48, 58, 0.4)),
-            to(rgba(47, 48, 58, 0.4))
-         ),
-         url(../images/studio/hero/overlay-mob-2x.jpg);
-      background-image: -o-linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-         ),
-         url(../images/studio/hero/overlay-mob-2x.jpg);
       background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
@@ -55,19 +29,6 @@
    @include media(768px) {
       max-width: 768px;
 
-      background-image: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            from(rgba(47, 48, 58, 0.4)),
-            to(rgba(47, 48, 58, 0.4))
-         ),
-         url(../images/studio/hero/overlay-tab.jpg);
-      background-image: -o-linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-         ),
-         url(../images/studio/hero/overlay-tab.jpg);
       background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
@@ -75,19 +36,6 @@
          url(../images/studio/hero/overlay-tab.jpg);
 
       @include retina {
-         background-image: -webkit-gradient(
-               linear,
-               left top,
-               left bottom,
-               from(rgba(47, 48, 58, 0.4)),
-               to(rgba(47, 48, 58, 0.4))
-            ),
-            url(../images/studio/hero/overlay-tab-2x.jpg);
-         background-image: -o-linear-gradient(
-               rgba(47, 48, 58, 0.4),
-               rgba(47, 48, 58, 0.4)
-            ),
-            url(../images/studio/hero/overlay-tab-2x.jpg);
          background-image: linear-gradient(
                rgba(47, 48, 58, 0.4),
                rgba(47, 48, 58, 0.4)
@@ -103,21 +51,6 @@
       height: 600px;
       max-width: 1600px;
 
-      background-image: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            from(rgba(47, 48, 58, 0.4)),
-            to(rgba(47, 48, 58, 0.4))
-         ),
-         url(../images/studio/hero/overlay.jpg);
-
-      background-image: -o-linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-         ),
-         url(../images/studio/hero/overlay.jpg);
-
       background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
@@ -125,48 +58,35 @@
          url(../images/studio/hero/overlay.jpg);
 
       @include retina {
-         background-image: -webkit-gradient(
-               linear,
-               left top,
-               left bottom,
-               from(rgba(47, 48, 58, 0.4)),
-               to(rgba(47, 48, 58, 0.4))
-            ),
-            url(../images/studio/hero/overlay-2x.jpg);
-         background-image: -o-linear-gradient(
-               rgba(47, 48, 58, 0.4),
-               rgba(47, 48, 58, 0.4)
-            ),
-            url(../images/studio/hero/overlay-2x.jpg);
          background-image: linear-gradient(
                rgba(47, 48, 58, 0.4),
                rgba(47, 48, 58, 0.4)
             ),
             url(../images/studio/hero/overlay-2x.jpg);
       }
+   }
 
-      &__title {
-         margin-bottom: 30px;
-         margin-right: auto;
-         margin-left: auto;
-         max-width: 360px;
+   &__title {
+      margin-bottom: 30px;
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 360px;
 
-         color: getColor("secondary-light");
-         @include font(26px, 1.62, 900, 0.06em);
-         text-transform: uppercase;
+      color: getColor("secondary-light");
+      @include font(26px, 1.62, 900, 0.06em);
+      text-transform: uppercase;
 
-         @include media(1200px) {
-            max-width: 696px;
-            @include font(44px, 1.36, Null, Null);
-         }
+      @include media(1200px) {
+         max-width: 696px;
+         @include font(44px, 1.36, Null, Null);
       }
+   }
 
-      &__button {
-         padding: 10px 24px;
+   &__button {
+      padding: 10px 24px;
 
-         @include media(1200px) {
-            padding: 10px 32px;
-         }
+      @include media(1200px) {
+         padding: 10px 32px;
       }
    }
 }
