@@ -1,0 +1,25 @@
+.logo {
+   font-family: "Raleway";
+   @include font(24px, 1.17, 700, Null);
+
+   @include media(1200px) {
+      @include font(26px, 1.19, Null, Null);
+   }
+
+   span {
+      color: getColor("accent");
+   }
+
+   .footer & {
+      display: block;
+      margin-bottom: 20px;
+   }
+
+   &.logo--dark {
+      color: getColor("secondary-dark");
+   }
+
+   &.logo--light {
+      color: getColor("secondary-light");
+   }
+}

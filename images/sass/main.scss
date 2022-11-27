@@ -1,0 +1,29 @@
+@import "./utils/vars";
+@import "./utils/colors";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./utils/hidden";
+
+@import "./base/reset";
+@import "./base/common";
+
+@import "./components/section";
+@import "./components/container";
+@import "./components/title";
+@import "./components/logo";
+@import "./components/btn";
+@import "./components/soc";
+@import "./components/filters";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/modal-form";
+@import "./components/mob-menu";
+
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/features";
+@import "./layouts/occupation";
+@import "./layouts/team";
+@import "./layouts/clients";
+/* @import "./layouts/examples"; */
+@import "./layouts/footer";

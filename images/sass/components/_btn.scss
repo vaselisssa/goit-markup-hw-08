@@ -1,0 +1,18 @@
+.btn {
+   @include font(16px, 1.87, 700, 0.06em);
+
+   background: getColor("accent");
+   box-shadow: $shadow;
+   border-radius: 4px;
+   border-width: 0;
+   color: getColor("secondary-light");
+   text-align: center;
+
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+   &:focus,
+   &:active {
+      background-color: getColor("state");
+   }
+}
