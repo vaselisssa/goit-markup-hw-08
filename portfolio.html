@@ -41,6 +41,11 @@
                      <a href="#" class="menu__link link">Контакти</a>
                   </li>
                </ul>
+               <button type="button" class="menu__button-open" data-menu-open>
+                  <svg class="menu__icon" width="40px" height="40px">
+                     <use href="./images/icons.svg#icon-menu"></use>
+                  </svg>
+               </button>
             </nav>
             <ul class="connect header__connect list">
                <li class="connect__item">
@@ -64,6 +69,93 @@
                   >
                </li>
             </ul>
+         </div>
+
+         <!-- mob-menu -->
+         <div class="mob-menu is-hidden" data-menu>
+            <div class="container">
+               <button
+                  type="button"
+                  class="mob-menu__button-close"
+                  data-menu-close
+               >
+                  <svg class="mob-menu__icon" width="40px" height="40px">
+                     <use href="./images/icons.svg#icon-close-mob"></use>
+                  </svg>
+               </button>
+               <div class="mob-menu-top">
+                  <ul class="mob-menu__list list">
+                     <li class="mob-menu__item">
+                        <a href="./index.html" class="mob-menu__link link"
+                           >Студія</a
+                        >
+                     </li>
+                     <li class="mob-menu__item">
+                        <a
+                           href="./portfolio.html"
+                           class="mob-menu__link link current"
+                           >Портфоліо</a
+                        >
+                     </li>
+                     <li class="mob-menu__item">
+                        <a href="#" class="mob-menu__link link">Контакти</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="mob-menu-bottom">
+                  <ul class="mob-menu__list list">
+                     <li class="mob-menu__item">
+                        <a
+                           href="tel:+380961111111"
+                           class="mob-menu__link mob-menu__link--tel link"
+                           >+38 096 111 11 11</a
+                        >
+                     </li>
+                     <li class="mob-menu__item">
+                        <a
+                           href="mailto:info@devstudio.com"
+                           class="mob-menu__link mob-menu__link--email link"
+                           >info@devstudio.com</a
+                        >
+                     </li>
+                  </ul>
+
+                  <ul class="mob-soc__list list">
+                     <li class="mob-soc__item">
+                        <a
+                           href="#"
+                           rel="noopener nofollow noreferrer"
+                           class="mob-soc__link link"
+                           >Instagram</a
+                        >
+                     </li>
+                     <li class="mob-soc__item">
+                        <a
+                           href="#"
+                           rel="noopener nofollow noreferrer"
+                           class="mob-soc__link link"
+                           >Twitter</a
+                        >
+                     </li>
+                     <li class="mob-soc__item">
+                        <a
+                           href="#"
+                           rel="noopener nofollow noreferrer"
+                           class="mob-soc__link link"
+                           >Facebook</a
+                        >
+                     </li>
+                     <li class="mob-soc__item">
+                        <a
+                           href="#"
+                           rel="noopener nofollow noreferrer"
+                           class="mob-soc__link link"
+                           >LinkedIn</a
+                        >
+                     </li>
+                  </ul>
+               </div>
+            </div>
          </div>
       </header>
 
@@ -430,5 +522,6 @@
             </div>
          </div>
       </footer>
+      <script src="./js/menu.js"></script>
    </body>
 </html>

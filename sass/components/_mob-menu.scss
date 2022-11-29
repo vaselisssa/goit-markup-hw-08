@@ -62,7 +62,7 @@
 
    &:hover,
    &:focus,
-   &:active {
+   &.current {
       color: getColor("accent");
    }
 
